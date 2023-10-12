@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('MahasiswaA', 'App\Http\Controllers\MahasiswaController@MahasiswaA');
-Route::get('MahasiswaB', 'App\Http\Controllers\MahasiswaController@MahasiswaB');
-Route::get('MahasiswaC', 'App\Http\Controllers\MahasiswaController@MahasiswaC');
-Route::get('MahasiswaD', 'App\Http\Controllers\MahasiswaController@MahasiswaD');
+Route::get('Mahasiswa/{kelas}/{modul}', 'App\Http\Controllers\MahasiswaController@MahasiswaA');
 
 Route::post('status', 'App\Http\Controllers\StatusController@status');

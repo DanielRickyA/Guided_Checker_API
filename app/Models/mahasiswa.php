@@ -14,4 +14,9 @@ class mahasiswa extends Model
         'nama',
         'kelas',
     ];
+
+    public function FStatus()
+    {
+        return $this->hasMany(status::class, 'id_mahasiswa', 'npm');
+    }
 }
